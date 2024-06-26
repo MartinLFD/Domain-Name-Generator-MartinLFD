@@ -1,20 +1,19 @@
 let pronoun = ['the', 'our'];
 let adj = ['great', 'big'];
 let noun = ['jogger', 'racoon'];
+let dotCom = ['.com', '.net', '.us', '.io', 'etc']
 
-function domGenerator() {
 
-    let firstOption = pronoun[Math.floor(Math.random() * 2)]
-    let secondOption = adj[Math.floor(Math.random() * 2)]
-    let therdOption = noun[Math.floor(Math.random() * 2)]
+    for ( let f of pronoun) {
+        for ( let s of adj) {
+            for ( let t of noun) {
+                for (let fourth of dotCom) {
+                    console.log(`${f}${s}${t}${fourth}`)
+                }
+            }
+          
+        }
+        
+    }
 
-    let domResult = (firstOption + secondOption + therdOption + '.com' );
-    return domResult;
-
-     
-
-} 
-
-console.log(domGenerator());
- 
   
